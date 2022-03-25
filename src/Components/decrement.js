@@ -3,7 +3,7 @@ export default class Decrement extends React.Component{
     constructor(props){
         super(props);
         this.state={
-            data:0,name:""
+            data:0,name:"harshad"
         }
     }
 
