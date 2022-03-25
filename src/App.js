@@ -1,13 +1,10 @@
-import logo from './logo.svg';
-import './App.css';
-import Decrement from './Components/decrement';
-import Increment from './Components/Increment';
-function App() {
-  var name=['harshad','sagar']
 
+import './App.css';
+import Home from './Home';
+function App() {
   return (
     <div className='App'>
-      <Decrement firstName={name}/>
+      <Home/>
     </div>
   );
 }
