@@ -1,5 +1,5 @@
 import React from "react";
-import home from "./home";
+import home from "./Home";
 import resume from "./Components/resume/resume";
 import { Switch,BrowserRouter,Route } from "react-router-dom";
 export default class routin extends React.Component{
@@ -14,10 +14,10 @@ export default class routin extends React.Component{
         return(
             <div> 
                 <BrowserRouter>
-                <Switch>
-                <Route exact path="/"component={home}/>
-                <Route exact path="/resume"component={resume}/>
-                </Switch>
+                    <Switch>
+                        <Route exact path="/"component={home}/>
+                        <Route exact path="/resume"component={resume}/>
+                    </Switch>
                 </BrowserRouter>
             </div>
         )
