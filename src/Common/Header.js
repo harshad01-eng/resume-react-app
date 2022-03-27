@@ -42,7 +42,10 @@ export default class Header extends React.Component{
                   Harshad Bajare
               </Typography>
               <Tooltip title="Download Resume">
-              <Button color="inherit">
+              <Button 
+                color="inherit" 
+                download="harshad-bajare-resume.pdf" 
+                href={require('../Assets/Documents/resume.pdf')}>
                   <DownloadIcon/>
               </Button>
               </Tooltip>
