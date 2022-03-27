@@ -14,7 +14,7 @@ return(
     <div className="App backgraoundImg">
         <div style={{display:'flex'}}>
             <ul style={{lineHeight: 0.5}}>
-                <li>
+                <li> 
                     <p 
                         onClick={()=>this.props.history.push('/resume')} 
                         style={{ color:'white', cursor:'pointer', font:'icon'}}>Resume</p>
