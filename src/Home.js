@@ -11,7 +11,8 @@ export default class home extends React.Component{
 render(){
 return(
     <div>
-      <img style={{width: "100%", height:"99vh"}} 
+      <img style={{width: "100%", height:"99vh", position:'absolute'}} 
       src={require("./Assets/Images/programming.jpg")}    />
+      <h1 onClick={()=>this.props.history.push('/increment')} style={{position:'relative', color:'white', cursor:'pointer'}}>Sagar</h1>
     </div>
 )}}
