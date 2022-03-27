@@ -14,10 +14,10 @@ export default class routin extends React.Component{
         return(
             <div> 
                 <BrowserRouter>
-                    <Switch>
-                        <Route exact path="/"component={home}/>
-                        <Route exact path="/resume"component={resume}/>
-                    </Switch>
+                <Switch>
+                <Route exact path="/"component={home}/>
+                <Route exact path="/resume"component={resume}/>
+                </Switch>
                 </BrowserRouter>
             </div>
         )
