@@ -38,7 +38,7 @@ export default class Header extends React.Component{
                 >
                     <MenuIcon />
               </IconButton>
-              <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+              <Typography  style={{color:'ActiveBorder'}}variant="h6" component="div" sx={{ flexGrow: 1 }}>
                   Harshad Bajare
               </Typography>
               <Tooltip title="Download Resume">
@@ -60,7 +60,7 @@ export default class Header extends React.Component{
                 onOpen={()=>this.setState({openDrawer: true})}>
                   
                   <Box
-                    sx={{ width: 250, height: "100%", background:'#A22575', color:'white' }}
+                    sx={{ width: 250, height: "100%", background:'#650041', color:'white' }}
                     role="presentation"
                     onClick={()=>this.setState({openDrawer: false})}
                     onKeyDown={()=>this.setState({openDrawer: true})}
