@@ -4,3 +4,6 @@
 .col{
   color: aqua;
 }
+.back{
+  background-image: image();
+}

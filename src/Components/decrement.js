@@ -9,12 +9,9 @@ export default class Decrement extends React.Component{
 
     render(){
         return<div className="col">
-           <h1>{this.props.firstName[1]}
+           <h1>Dec
             </h1> 
-           {this.props.firstName.map((res)=>(
-               res
-           ))
-           }
+            <button onClick={ ()=>{this.props.history.push('/')}}>Home</button>
 
             </div>
     }
