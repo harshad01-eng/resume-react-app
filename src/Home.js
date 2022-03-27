@@ -11,7 +11,7 @@ export default class home extends React.Component{
 render(){
 return(
     <div>
-      <img style={{width: "100%"}} 
+      <img style={{width: "100%", height:"99vh"}} 
       src={require("./Assets/Images/programming.jpg")}    />
     </div>
 )}}
