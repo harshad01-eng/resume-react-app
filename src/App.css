@@ -7,3 +7,17 @@
 .back{
   background-image: image();
 }
+.App{
+  height: 100%;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+}
+.backgraoundImg{
+  width: 100% !important;
+  height: 99vh !important;
+  background-size: 100%;
+  background-repeat: no-repeat, repeat;
+  background-image: url('./Assets/Images/programBg.jpg')
+}

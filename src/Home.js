@@ -11,8 +11,24 @@ export default class home extends React.Component{
 render(){
 return(
     <div>
-      <img style={{width: "100%", height:"99vh", position:'absolute'}} 
-      src={require("./Assets/Images/programming.jpg")}    />
-      <h1 onClick={()=>this.props.history.push('/increment')} style={{position:'relative', color:'white', cursor:'pointer'}}>Sagar</h1>
+    <div className="App backgraoundImg">
+        <div style={{display:'flex'}}>
+            <ul style={{lineHeight: 0.5}}>
+                <li>
+                    <p 
+                        onClick={()=>this.props.history.push('/resume')} 
+                        style={{ color:'white', cursor:'pointer', font:'icon'}}>Resume</p>
+                </li>
+                <li>
+                    <p
+                        onClick={()=>this.props.history.push('/contactus')}
+                        style={{color:'white', cursor:'pointer', font:'icon'}}> contactUs</p>
+                
+                </li>
+            </ul>
+        </div>
     </div>
+    
+    </div>
+
 )}}
