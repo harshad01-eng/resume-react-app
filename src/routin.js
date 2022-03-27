@@ -1,5 +1,5 @@
 import React from "react";
-import home from "./home";
+import home from "./Home";
 import resume from "./Components/resume/resume";
 import { Switch,BrowserRouter,Route } from "react-router-dom";
 export default class routin extends React.Component{
