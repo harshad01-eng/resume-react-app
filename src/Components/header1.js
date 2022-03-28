@@ -5,7 +5,9 @@ import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import IconButton from '@mui/material/IconButton';
+import DownloadIcon from '@mui/icons-material/Download';
 import MenuIcon from '@mui/icons-material/Menu';
+import Tooltip from '@mui/material/Tooltip';
 export default class Header1 extends React.Component{
 
             constructor(props){
@@ -17,24 +19,28 @@ export default class Header1 extends React.Component{
             render(){
                 return(
                     <div>
-                            <AppBar position="static">
-                                <Toolbar>
-                                <IconButton
-                                    size="large"
-                                    edge="start"
-                                    color="inherit"
-                                    aria-label="menu"
-                                    sx={{ mr: 2}}
-                                    onClick={()=>this.setState({opendrawer:true})}
-                                    >
-                                <MenuIcon />
-                                
-                                </IconButton>
-                                <Typography style={{color:'ActiveBorder'}}variant="h6"component="div" sx={{flexgrow: 1}}>
-                                    Harshad Bajare
-                                </Typography>
-                                </Toolbar>
-                            </AppBar>
+                         <AppBar position="static" style={{background:'#650041'}}>
+              <Toolbar>
+              <IconButton
+                    size="large"
+                    edge="start"
+                    color="inherit"
+                    aria-label="menu"
+                    sx={{ mr: 2 }}
+                    onClick={()=>this.setState({openDrawer: true})}
+                >
+                    <MenuIcon />
+              </IconButton>
+              <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+                  Harshad Bajare
+              </Typography>
+              <Tooltip title="Download Resume">
+              <Button color="inherit">
+                  <DownloadIcon/>
+              </Button>
+              </Tooltip>
+              </Toolbar>
+              </AppBar>
                     </div>
                 )
             }
