@@ -7,7 +7,7 @@ export default class resume extends React.Component{
         }
     }
 
-    render(){
+    render(){  
         return(
             <div className="app"> 
                 <p>harshad</p>

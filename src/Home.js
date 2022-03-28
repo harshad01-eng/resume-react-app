@@ -15,7 +15,7 @@ return(
     <div className="App backgraoundImg">
             <Header1/>
 
-    </div>
+    </div>   
     
     </div>
 

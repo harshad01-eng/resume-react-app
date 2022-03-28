@@ -21,3 +21,13 @@
   background-repeat: no-repeat, repeat;
   background-image: url('./Assets/Images/programBg.jpg')
 }
+
+@media screen and (max-width: 600px) {
+.backgraoundImg {
+  width: 100% !important;
+  height: 100vh !important;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url('./Assets/Images/mobileprogramBg.jpg')
+}
+}
