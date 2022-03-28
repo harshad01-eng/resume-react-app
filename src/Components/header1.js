@@ -11,6 +11,7 @@ export default class Header1 extends React.Component{
             constructor(props){
                 super(props);
                 this.state={
+                    opendrawer:false,
 
                 }
             }
@@ -21,13 +22,17 @@ export default class Header1 extends React.Component{
                             <AppBar position="static">
                                 <Toolbar>
                                 <IconButton
-                                size='large'
-                                edge='start'
-                                color='default'
-                                aria-label='menu'
-                                sx={{mr:2}}
+                                size="large"
+                                edge="start"
+                                color="inherit"
+                                aria-label="menu"
+                                sx={{ mr: 2}}
+                               onClick={()=>this.setState({opendrawer:true})}
                                 >
                                 <MenuIcon />
+                                <Typography style={{color:'ActiveBorder'}}variant="h6"component="div" sx={{flexgrow: 1}}>
+                                    Harshad Bajare
+                                </Typography>
                                 </IconButton>
                                 </Toolbar>
                             </AppBar>
