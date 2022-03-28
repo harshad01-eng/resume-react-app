@@ -14,10 +14,7 @@ return(
     <div>
     <div className="App backgraoundImg">
             <Header1/>
-<<<<<<< Updated upstream
-=======
-        </div>
->>>>>>> Stashed changes
+
     </div>
     
     </div>
