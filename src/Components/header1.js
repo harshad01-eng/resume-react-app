@@ -19,28 +19,28 @@ export default class Header1 extends React.Component{
             render(){
                 return(
                     <div>
-                         <AppBar position="static" style={{background:'#650041'}}>
-              <Toolbar>
-              <IconButton
-                    size="large"
-                    edge="start"
-                    color="inherit"
-                    aria-label="menu"
-                    sx={{ mr: 2 }}
-                    onClick={()=>this.setState({openDrawer: true})}
-                >
-                    <MenuIcon />
-              </IconButton>
-              <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-                  Harshad Bajare
-              </Typography>
-              <Tooltip title="Download Resume">
-              <Button color="inherit">
-                  <DownloadIcon/>
-              </Button>
-              </Tooltip>
-              </Toolbar>
-              </AppBar>
+                         <AppBar position="static">
+                            <Toolbar>
+                            <IconButton
+                                    size="large"
+                                    edge="start"
+                                    color="inherit"
+                                    aria-label="menu"
+                                    sx={{ mr: 2 }}
+                                    onClick={()=>this.setState({openDrawer: true})}
+                                >
+                                    <MenuIcon />
+                            </IconButton>
+                            <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+                                Harshad Bajare
+                            </Typography>
+                            <Tooltip title="Download Resume">
+                            <Button color="inherit">
+                                <DownloadIcon/>
+                            </Button>
+                            </Tooltip>
+                            </Toolbar>
+                            </AppBar>
                     </div>
                 )
             }
