@@ -1,4 +1,5 @@
 import React from "react";
+import Header1 from "./Components/header1";
 // import imgBg from './Assets/Images/programBg.jpg';
 export default class home extends React.Component{
     constructor(props){
@@ -13,6 +14,7 @@ return(
     <div>
     <div className="App backgraoundImg">
         <div style={{display:'flex'}}>
+            <Header1/>
             <ul style={{lineHeight: 0.5}}>
                 <li>
                     <p 
