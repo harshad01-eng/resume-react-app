@@ -11,6 +11,13 @@ import Tooltip from '@mui/material/Tooltip';
 
 
 import SwipeableDrawer from '@mui/material/SwipeableDrawer';
+import List from '@mui/material/List';
+import ListItem from '@mui/material/ListItem';
+import HomeIcon from '@mui/icons-material/Home';
+import ListItemText from '@mui/material/ListItemText';
+import SummarizeIcon from '@mui/icons-material/Summarize';
+import { alpha } from '@mui/material';
+import { Opacity, TransformSharp } from '@mui/icons-material';
 export default class Header1 extends React.Component{
 
             constructor(props){
@@ -39,20 +46,30 @@ export default class Header1 extends React.Component{
                                 Harshad Bajare
                             </Typography>
                             <Tooltip title="Download Resume">
-                            <Button color="inherit">
-                                <DownloadIcon/>
+                            <Button href={require("../Assets/Images/profile.jpg")}download='harshad.jpg'color="inherit">
+                                <DownloadIcon/>Resume
+
                             </Button>
                             </Tooltip>
                             </Toolbar>
                             </AppBar>
                          
                                 <SwipeableDrawer
-                                anchor='left'
+                                anchor={'left'}
                                 open={this.state.openDrawer}
                                 onClose={()=>this.setState({openDrawer:false})}
                                 onOpen={()=>this.setState({openDrawer:true})}>
-                                    <Box sx={{width:200,height:'100%',background:'#354A68'}}
+                                    <Box sx={{width:200,height:'100%',background:'#354A68',color:'white'}}
                                     role="presentation">
+                                        <List>
+                                        <ListItem button onClick={()=>this.props.history.push('/')}  >
+                                            <HomeIcon/><ListItemText  style={{paddingLeft:20}} primary={'Home'}/>
+                                            </ListItem>
+                                         <ListItem button onClick={()=>this.props.history.push('/resume')}  >
+                                         <SummarizeIcon/><ListItemText  style={{paddingLeft:20}} primary={'Resume'}/>
+                                            </ListItem>
+                                        </List>
+  
 
                                     </Box>
 
