@@ -19,7 +19,7 @@
   height: 99vh !important;
   background-size: 100%;
   background-repeat: no-repeat, repeat;
-  background-image: url('./Assets/Images/programBg.jpg')
+  background-image: url('./Assets/Images/programBg.jpg');
 }
 .backgraound{
   width: 100% !important;
@@ -28,7 +28,9 @@
   background-repeat: no-repeat, repeat;
   background-color: #5C4B62    ;
 }
-
+.detaislWidth{
+  width: 30% !important;
+}
 @media screen and (max-width: 600px) {
 .backgraoundImg {
   width: 100% !important;
@@ -37,6 +39,12 @@
   background-repeat: no-repeat;
   background-image: url('./Assets/Images/mobileprogramBg.jpg')
 }
+.detaislWidth{
+  width: 80% !important;
+}
+}
+.marqee{
+  width: 330px;;
 }
 
 
