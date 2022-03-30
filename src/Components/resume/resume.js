@@ -12,6 +12,7 @@ export default class resume extends React.Component{
         return(
             <div className="app backgraound"> 
             <Header1 history={this.props.history}/>
+            <div style={{overflowY:'scroll',height:'100%'}}>
             {objExp.map((response,index)=><div>
             <div style={styles.center}>
                 <h2 style={{ marginTop:index==0? 16:-3, textAlign:'center', color:'white',fontFamily:'sans-serif'}}><ins>{response.exp} </ins></h2>
@@ -29,6 +30,7 @@ export default class resume extends React.Component{
                     <hr style={{color:'black',marginTop:-10,width:'50%'}}>
                     </hr>
                 </div>)}
+                </div>
             </div>
         )
     }

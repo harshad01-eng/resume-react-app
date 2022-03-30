@@ -69,7 +69,7 @@ export default class Header1 extends React.Component{
                                          <SummarizeIcon/><ListItemText  style={{paddingLeft:20}} primary={'Resume'}/>
                                             </ListItem>
                                             <ListItem button onClick={()=>this.props.history.push('/contactus')}  >
-                                         <SummarizeIcon/><ListItemText  style={{paddingLeft:20}} primary={'contactus'}/>
+                                         <SummarizeIcon/><ListItemText  style={{paddingLeft:20}} primary={'ContactUs'}/>
                                             </ListItem>
                                         </List>
   

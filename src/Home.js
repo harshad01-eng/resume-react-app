@@ -26,7 +26,7 @@ return(
             <div style={styles.center}>
                 
                 <marquee className='marqee' direction="left" height="50px"behavior='alternate' scrollamount="4">
-                    <p style={{fontSize:34 ,fontWeight:'bold', marginTop:'auto',color:'#AFD20A'}}>Software Developer</p>
+                    <p style={{fontSize:34 ,fontWeight:'bold', marginTop:'auto',color:'#AFD20A'}}>FrontEnd Developer</p>
                 </marquee>
             </div>
             <div style={styles.about} >
