@@ -16,7 +16,7 @@
 }
 .backgraoundImg{
   width: 100% !important;
-  height: 99vh !important;
+  height: 100vh !important;
   background-size: 100%;
   background-repeat: no-repeat, repeat;
   background-image: url('./Assets/Images/programBg.jpg');
